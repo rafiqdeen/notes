@@ -1,2 +1,0 @@
-module AddNotesHelper
-end

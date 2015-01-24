@@ -1,8 +1,8 @@
 Rails.application.routes.draw do
-  get 'add_notes' => "add_notes#index"
+  get 'add_articles' => "articles#new"
 
 
-  # get 'articles/index'
+  get 'articles/index' => "articles#index"
 
   # get 'articles/page'
 
