@@ -1,8 +1,10 @@
 Rails.application.routes.draw do
+  resources :posts
+
   get 'add_articles' => "articles#new"
 
 
-  get 'articles/index' => "articles#index"
+  # get 'articles/index' => "articles#index"
 
   # get 'articles/page'
 
