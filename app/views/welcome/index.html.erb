@@ -1,69 +1,45 @@
-<!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+<!--&lt;!&ndash; Latest compiled and minified CSS &ndash;&gt;-->
+<!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">-->
 
-<!-- Optional theme -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+<!--&lt;!&ndash; Optional theme &ndash;&gt;-->
+<!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">-->
 
-<!-- Latest compiled and minified JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
-
-<h1>Welcome Notes</h1>
-<!--<nav class="navbar navbar-inverse">-->
-  <!--<div class="container-fluid">-->
-    <!--<div class="navbar-collapse collapse navbar-responsive-collapse navigation">-->
-      <!--<ul class="nav navbar-nav navbar-left">-->
-        <!--<li class="dropdown">-->
-          <!--<a href="#" class="dropdown-toggle" data-toggle="dropdown">New<b class="caret"></b></a>-->
-          <!--<ul class="dropdown-menu">-->
-            <!--<li><a href="add_notes">Notes</a></li>-->
-            <!--<li><a href="add_story">Story</a></li>-->
-            <li><a href="articles/new">Articles</a></li>
-            <!--<li class="divider"></li>-->
-            <!--<li class="dropdown-header">Help</li>-->
-            <!--<li><a href="about_us">About Us</a></li>-->
-            <!--<li><a href="contact_us">Contact Us</a></li>-->
-          <!--</ul>-->
-        <!--</li>-->
-      <!--</ul>-->
-      <!--<form class="navbar-form navbar-left">-->
-        <!--<input type="text" class="form-control col-lg-8" placeholder="Search">-->
-      <!--</form>-->
-    <!--</div>-->
-  <!--</div>-->
-<!--</nav>-->
-
-<div class="navbar navbar-default" id="subnav">
-  <div class="col-md-12">
-    <div class="navbar-header">
-
-      <a href="#" style="margin-left:15px;" class="navbar-btn btn btn-default btn-plus dropdown-toggle" data-toggle="dropdown"><i class="glyphicon glyphicon-home" style="color:#dd1111;"></i> Home <small><i class="glyphicon glyphicon-chevron-down"></i></small></a>
-      <ul class="nav dropdown-menu">
-        <li><a href="#"><i class="glyphicon glyphicon-user" style="color:#1111dd;"></i> Profile</a></li>
-        <li><a href="#"><i class="glyphicon glyphicon-dashboard" style="color:#0000aa;"></i> Dashboard</a></li>
-        <li><a href="#"><i class="glyphicon glyphicon-inbox" style="color:#11dd11;"></i> Pages</a></li>
-        <li class="nav-divider"></li>
-        <li><a href="#"><i class="glyphicon glyphicon-cog" style="color:#dd1111;"></i> Settings</a></li>
-        <li><a href="#"><i class="glyphicon glyphicon-plus"></i> More..</a></li>
-      </ul>
+<!--&lt;!&ndash; Latest compiled and minified JavaScript &ndash;&gt;-->
+<!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>-->
 
 
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse2">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
+<!--<div class="navbar navbar-default" id="subnav">-->
+<!--<div class="col-md-12">-->
+<!--<div class="navbar-header">-->
 
-    </div>
-    <div class="collapse navbar-collapse" id="navbar-collapse2">
-      <ul class="nav navbar-nav navbar-right">
-        <li class="active"><a href="#">Posts</a></li>
-        <li><a href="#loginModal" role="button" data-toggle="modal">Login</a></li>
-        <li><a href="#aboutModal" role="button" data-toggle="modal">About</a></li>
-      </ul>
-    </div>
-  </div>
-</div>
+<!--<a href="#" style="margin-left:15px;" class="navbar-btn btn btn-default btn-plus dropdown-toggle" data-toggle="dropdown"><i class="glyphicon glyphicon-home" style="color:#dd1111;"></i> Home <small><i class="glyphicon glyphicon-chevron-down"></i></small></a>-->
+<!--<ul class="nav dropdown-menu">-->
+<!--<li><a href="#"><i class="glyphicon glyphicon-user" style="color:#1111dd;"></i> Profile</a></li>-->
+<li><a href="articles/new"><i class="glyphicon glyphicon-dashboard" style="color:#0000aa;"></i> Create</a></li>
+<!--<li><a href="#"><i class="glyphicon glyphicon-inbox" style="color:#11dd11;"></i> Pages</a></li>-->
+<!--<li class="nav-divider"></li>-->
+<!--<li><a href="#"><i class="glyphicon glyphicon-cog" style="color:#dd1111;"></i> Settings</a></li>-->
+<!--<li><a href="#"><i class="glyphicon glyphicon-plus"></i> More..</a></li>-->
+<!--</ul>-->
+
+
+<!--<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse2">-->
+<!--<span class="sr-only">Toggle navigation</span>-->
+<!--<span class="icon-bar"></span>-->
+<!--<span class="icon-bar"></span>-->
+<!--<span class="icon-bar"></span>-->
+<!--</button>-->
+
+<!--</div>-->
+<!--<div class="collapse navbar-collapse" id="navbar-collapse2">-->
+<!--<ul class="nav navbar-nav navbar-right">-->
+<!--<li class="active"><a href="#">Posts</a></li>-->
+<!--<li><a href="#loginModal" role="button" data-toggle="modal">Login</a></li>-->
+<!--<li><a href="#aboutModal" role="button" data-toggle="modal">About</a></li>-->
+<!--</ul>-->
+<!--</div>-->
+<!--</div>-->
+<!--</div>-->
 <!--<p>-->
 <!--<%= @article.each do |article| %>-->
     <!--<strong>Title:</strong>-->
@@ -79,8 +55,12 @@
       <div class="list-group">
         <% @article.each do |article| %>
             <a href="http://bootply.com/tagged/bootstrap-3" class="list-group-item active"><%= article.title %></a>
+            <%= link_to 'Edit', edit_article_path(article) %>
+            <%= link_to 'Show', article_path(article) %>
+            <%= link_to 'Destroy', article_path(article), method: :delete, data: {confirm: 'Are you sure?'} %>
         <% end %>
       </div>
     </div>
   </div>
 </div>
+<%= link_to 'New article', new_article_path %>
