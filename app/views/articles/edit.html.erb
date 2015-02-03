@@ -1,19 +1,27 @@
-<h1>Editing Articles</h1>
+<div class="banner">
+  <h2>
+    Update Your Note Here
+  </h2>
+</div>
+<div class="new article col-lg-6">
+  <div class="well">
+    <%= form_for @article, url: article_path do |f| %>
+        <p>
+          <%= f.label "Enter your title" %><br>
+          <%= f.text_field :title, :class => "form-control" %>
+        </p>
 
-<%= form_for @article, url: article_path do |f| %>
-    <p>
-      <%= f.label :title %><br>
-      <%= f.text_field :title %>
-    </p>
+        <p>
+          <%= f.label "Enter your description" %><br>
+          <%= f.text_area :description, :class => "form-control", :rows => "3" %>
+        </p>
 
-    <p>
-      <%= f.label "Description" %><br>
-      <%= f.text_area :description %>
-    </p>
+        <p>
+          <%= f.submit "Update", :class => "btn btn-default" %>
+          <%= link_to 'Cancel', root_path, :class => "btn btn-default" %>
+        </p>
+    <% end %>
+  </div>
+</div>
 
-    <p>
-      <%= f.submit "Update" %>
-    </p>
-
-<% end %>
 
