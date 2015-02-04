@@ -1,9 +1,9 @@
-<p>
-  <strong>Title:</strong>
-  <%= @article.title %>
-</p>
-
-<p>
-  <strong>Text:</strong>
-  <%= @article.description %>
-</p>
+<div class="col-sm-6">
+  <div class="panel panel-default">
+    <div class="panel-heading"><h4><strong><%= @article.title %></strong></h4></div>
+    <div class="panel-body">
+      <h4><strong>Description:</strong></h4>
+      <h4><%= @article.description %></h4>
+    </div>
+  </div>
+</div>
